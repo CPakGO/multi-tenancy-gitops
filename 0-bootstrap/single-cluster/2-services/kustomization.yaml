@@ -170,3 +170,11 @@ patches:
       value:
         name: spec.channel
         value: v1.1
+- target:
+    name: ibm-cp4s-operator
+  patch: |-
+    - op: replace
+      path: /spec/source/helm/parameters/1
+      value:
+        name: spec.channel
+        value: v1.10
